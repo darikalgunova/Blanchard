@@ -15,6 +15,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 @font-face {
@@ -96,6 +97,7 @@ h1,h2,h3,h4,h5,h6,p {
     --color-purple-defolt: #9d5cd0;
     --color-dark-purple: #7943a4;
     --color-softviolet: #c283f3;
+    --gap: 50px;
 }
 
 .flex {
@@ -126,6 +128,7 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 400;
     font-size: 48px;
     color: var(--color-dark-gray);
+    margin-bottom: 20px;
 }
 
 .section-caption {
@@ -138,10 +141,22 @@ h1,h2,h3,h4,h5,h6,p {
 /* header */
 
 .header {
+    padding: 29px 0;
     background-color: var(--color-black);
 }
+
+.header__container {
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header__logo {
     margin-right: 179px;
+}
+
+.header__logo img {
+    width: 173px;
+    height: 40px;
 }
 
 .header__nav .nav__link {
@@ -151,6 +166,10 @@ h1,h2,h3,h4,h5,h6,p {
     color: var(--color-white);
 }
 
+.header__nav .nav__item:not(:last-child) {
+    margin-right: 96px;
+}
+
 .header__svg {
     margin-left: auto;
 }
@@ -158,15 +177,12 @@ h1,h2,h3,h4,h5,h6,p {
 /* hero */
 
 .hero {
+    padding-top: 147px;
+    padding-bottom: 146px;
     background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.hero__container {
-    padding-top: 228px;
-    padding-bottom: 119px;
 }
 
 .hero__title {
@@ -174,6 +190,8 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 72px;
     line-height: 94%;
     color: var(--color-white);
+    width: 60%;
+    margin-bottom: 17px;
 }
 
 .hero__descr {
@@ -181,23 +199,165 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 18px;
     line-height: 167%;
     color: var(--color-white);
+    width: 34%;
+    margin-bottom: 92px;
 }
 
 .hero__btn {
-    padding: 17px 35px;
+    padding: 25px 35px;
     background-color: var(--color-purple-defolt);
     color: var(--color-white);
 }
 
+/* about */
+
+.about {
+    padding-top: 86px;
+    padding-bottom: 70px;
+}
+
+.about__descr {
+    width: 65%;
+}
+
+/* gallery */
+
+.gallery {
+    padding-top: 85px;
+    padding-bottom: 77px;
+    background-image: url(../img/gallery-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery__title {
+    color: var(--color-white);
+    margin-bottom: 25px;
+}
+
+.gallery__box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.gallery__checkbox {
+    margin-bottom: 9px;
+}
+
+.gallery__checkbox-item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.gallery__input-checkbox {
+    margin-right: 7px;
+}
+
+.gallery__label-checkbox {
+    color: var(--color-white);
+}
+
+.content:not(:last-child) {
+    margin-right: 50px;
+}
+
 /* catalog */
 
+.catalog {
+    padding-top: 86px;
+    padding-bottom: 70px;
+}
+
+.catalog__descr {
+    width: 68%;
+    margin-bottom: 38px;
+}
+
+.catalog-info__img {
+   width: 100%;
+}
+
+.catalog__list {
+    flex-direction: column;
+}
+
+
+.catalog__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.catalog-info__text {
+    padding: 120px 10px 52px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-info__title {
+    margin-bottom: 12px;
+}
+
 .catalog-info__time {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     color: var(--color-pale-grey);
+    margin-bottom: 15px;
 }
 
 /* events */
+
+.events {
+    padding-top: 16px;
+    padding-bottom: 43px;
+}
+
+.events__item {
+    border: 1px solid var(--color-light-gray);
+    width: 500px;
+}
+
+.events__item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+.events__image {
+    width: 100%;
+    min-height: 300px;
+}
+
+.events__image-sh {
+    background-image: url(../img/Shchuseva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.events__image-mm {
+    background-image: url(../img/ММОМА.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.events__image-jew {
+    background-image: url(../img/Jewish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.events-card {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 50px 39px 50px;
+}
+
+.events-card__wrapper {
+    min-height: 311px;
+   
+}
 
 .events-card__text {
     display: block;
@@ -208,13 +368,24 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .events-card__time {
+    display: block;
     font-weight: 600;
     font-size: 12px;
     line-height: 16.34px;
     color: var(--color-pale-grey);
+    margin-bottom: 13px;
+}
+
+.events-card__title {
+    margin-bottom: 10px;
+}
+
+.events-card__descr {
+    margin-bottom: 67px;
 }
 
 .events-card__link {
+    align-self: flex-start;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
@@ -222,28 +393,91 @@ h1,h2,h3,h4,h5,h6,p {
     border-bottom: 1px solid var(--color-purple-defolt);
 }
 
+/* projects */
+
+.projects {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.projects__descr {
+    width: 67%;
+    margin-bottom: 31px;
+}
+
+.partner__title {
+    margin-bottom: 15px;
+}
+
+.partner__item:not(:last-child) {
+    margin-right: 33px;
+}
+
 /* contacts */
+
+.contacts {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.contacts__container {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .contacts__address {
     font-style: normal;
 }
 
+.contacts__wrapper {
+    margin-right: 14px;
+}
+
 .contacts__btn {
-    padding: 9px 24px;
+    padding: 13px 33px;
     border: 2px solid var(--color-purple-defolt);
     color: var(--color-purple-defolt);
+}
+
+.contacts__btn-desktop {
+    
+}
+
+.contacts__btn-mobile {
+    display: none;
 }
 
 .contacts__input {
     border: 1px solid var(--color-dark-gray);
     border-radius: 100px;
-    padding: 9px 24px;
+    padding: 14px 42px;
+}
+
+.contacts__input:not(:last-child) {
+    margin-right: 14px;
+}
+
+
+.contacts__item:not(:last-child) {
+    margin-right: 19px;
+}
+
+.contacts__connect-title {
+    margin-bottom: 5px;
 }
 
 /* footer */
 
 .footer {
+    padding-top: 51px;
+    padding-bottom: 40px;
     background-color: var(--color-black);
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 19px;
 }
 
 .footer__list {
