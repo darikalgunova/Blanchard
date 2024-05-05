@@ -146,7 +146,6 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .header__container {
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -439,10 +438,6 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 13px 33px;
     border: 2px solid var(--color-purple-defolt);
     color: var(--color-purple-defolt);
-}
-
-.contacts__btn-desktop {
-    
 }
 
 .contacts__btn-mobile {

@@ -4,11 +4,19 @@
 
     .header__container {
         flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
     }
 
     .header__logo {
         margin-right: auto;
         margin-bottom: 21px;
+    }
+
+    .header__svg {
+        position: absolute;
+        right: 161px;
+        top: 7px;
     }
 
     /* hero */
@@ -81,8 +89,6 @@
     }
 
     .header__svg {
-        position: absolute;
-        top: 38px;
         right: 50px;
     }
 
@@ -239,7 +245,7 @@
     }
 
     .header__svg {
-        top: 35px;
+        right: 50px;
     }
 
     /* hero */
@@ -383,10 +389,6 @@
         padding-bottom: 6px;
     }
 
-    .header__container {
-        flex-wrap: wrap;
-    }
-
     .header__logo {
         margin-bottom: 6px;
     }
@@ -406,8 +408,8 @@
     }
 
     .header__svg {
-        top: 12px;
         right: 15px;
+        top: -3px;
     }
 
     .header__svg svg {
@@ -646,7 +648,7 @@
 
     .footer {
         padding-top: 30px;
-        padding-bottom: 19px;
+        padding-bottom: 21px;
     }
 
     .footer__logo img {
