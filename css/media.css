@@ -37,17 +37,13 @@
 
      /* gallery */
 
-     .gallery {
-        padding-bottom: 75px;
-    }
-
     .gallery__box {
         align-items: flex-start;
         flex-direction: column;
     }
 
     .gallery__checkbox {
-        margin-bottom: 38px;
+        margin-bottom: 37px;
     }
 
     /* events */
@@ -57,7 +53,7 @@
         width: 423px;
     }
 
-    .events__item:not(:last-child) {
+    .events__item:not(:nth-child(3)) {
         margin-right: 30px;
     }
 
@@ -79,7 +75,7 @@
     /* header */
 
     .header {
-        padding-top: 32px;
+        padding-top: 31px;
         padding-bottom: 24px;
     }
 
@@ -95,17 +91,17 @@
     /* hero */
 
     .hero {
-        padding-top: 102px;
-        padding-bottom: 100px;
+        padding-top: 101px;
+        padding-bottom: 101px;
     }
 
     .hero__title {
-        margin-bottom: 19px;
+        margin-bottom: 21px;
     }
 
     .hero__descr {
         width: 80%;
-        margin-bottom: 134px;
+        margin-bottom: 132px;
     }
 
     /* about */
@@ -144,11 +140,11 @@
     }
 
     .events-card {
-        padding: 14px 31px 46px 32px;
+        padding: 16px 31px 46px 32px;
     }
 
     .events-card__wrapper {
-        min-height: 388px;
+        min-height: 385px;
     }
 
     .events-card__text {
@@ -157,23 +153,22 @@
 
     .events-card__time {
         text-align: end;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
+    }
+
+    .events-card__title {
+        margin-bottom: 7px;
     }
 
     .events-card__descr {
-        margin-bottom: 21px;
+        margin-bottom: 20px;
     }
 
     /* projects */
 
-    .projects {
-        padding-top: 42px;
-        padding-bottom: 78px;
-    }
-
     .projects__descr {
         width: 100%;
-        margin-bottom: 22px;
+        margin-bottom: 21px;
     }
 
     .partner__item:not(:last-child) {
@@ -183,7 +178,7 @@
     /* contacts */
 
     .contacts {
-        padding-top: 41px;
+        padding-top: 40px;
         padding-bottom: 40px;
     }
 
@@ -201,10 +196,6 @@
 
     .contacts__input:not(:last-child) {
         margin-right: 16px;
-    }
-
-    .contacts__btn {
-        padding: 13px 40px;
     }
 
     .contacts__form {
@@ -267,14 +258,14 @@
         padding-bottom: 76px;
     }
 
-    .content:not(:last-child) {
+    .content:not(:nth-child(3)) {
         margin-right: 33px;
     }
 
     /* catalog */
 
     .catalog {
-        padding-bottom: 67px;
+        padding-bottom: 68px;
     }
 
     .catalog__descr {
@@ -301,20 +292,31 @@
        
     }
 
-    .events__item:not(:last-child) {
+    .events__item:not(:nth-child(3)) {
         margin-right: 0;
+    }
+
+    .events__item:not(:last-child) {
         margin-bottom: 29px;
     }
 
-    .events-card__title {
-        margin-bottom: 13px;
+    .events-card {
+        padding: 14px 31px 46px 32px;
     }
 
     .events-card__wrapper {
         min-height: 234px;
     }
 
+    .events-card__title {
+        margin-bottom: 15px;
+    }
+
     /* partner */
+
+    .projects {
+        padding-top: 43px;
+    }
 
     .projects__descr {
         width: 100%;
@@ -322,7 +324,7 @@
     }
 
     .partner__title {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
     }
 
     .partner__item:not(:last-child) {
@@ -337,6 +339,7 @@
 
     .contacts {
         padding-top: 42px;
+        padding-bottom: 41px;
     }
 
     .contacts__form {
@@ -353,7 +356,7 @@
     }
 
     .contacts__wrapper {
-        margin-bottom: 13px;
+        margin-bottom: 11px;
         margin-right: 0;
     }
 
@@ -420,7 +423,7 @@
 
     .hero {
         padding-top: 50px;
-        padding-bottom: 49px;
+        padding-bottom: 50px;
     }
 
     .hero__container {
@@ -458,11 +461,11 @@
 
     .about {
         padding-top: 53px;
-        padding-bottom: 40px;
+        padding-bottom: 41px;
     }
 
     .about__title {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
 
     .about__descr {
@@ -474,7 +477,7 @@
 
     .gallery {
         padding-top: 53px;
-        padding-bottom: 47px;
+        padding-bottom: 48px;
     }
 
     .gallery__title {
@@ -485,20 +488,23 @@
         flex-direction: column;
     }
 
-    .content:not(:last-child) {
+    .content:not(:nth-child(3)) {
         margin-right: 0;
+    }
+
+    .content:not(:last-child) {
         margin-bottom: 26px;
     }
 
     /* catalog */
 
     .catalog {
-        padding-top: 52px;
+        padding-top: 53px;
         padding-bottom: 35px;
     }
 
     .catalog__title {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
 
     .catalog__descr {
@@ -524,7 +530,7 @@
     /* events */
 
     .events {
-        padding-top: 17px;
+        padding-top: 18px;
         padding-bottom: 30px;
     }
 
@@ -537,11 +543,11 @@
     }
 
     .events__item:not(:last-child) {
-        margin-bottom: 19px;
+        margin-bottom: 20px;
     }
 
     .events-card__time {
-        margin-bottom: 12px;
+        margin-bottom: 11px;
     }
 
     .events-card__title {
@@ -561,10 +567,11 @@
     }
 
     .projects__title {
-        margin-bottom: 15px;
+        margin-bottom: 14px;
     }
 
     .projects__descr {
+        width: 99%;
         margin-bottom: 20px;
     }
 
@@ -648,7 +655,7 @@
 
     .footer {
         padding-top: 30px;
-        padding-bottom: 21px;
+        padding-bottom: 19px;
     }
 
     .footer__logo img {
