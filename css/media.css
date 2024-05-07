@@ -3,9 +3,9 @@
     /* header */
 
     .header__container {
+        position: relative;
         flex-direction: column;
         flex-wrap: wrap;
-        position: relative;
     }
 
     .header__logo {
@@ -35,11 +35,11 @@
         padding: 52px 10px 52px 15px;
     }
 
-     /* gallery */
+    /* gallery */
 
     .gallery__box {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .gallery__checkbox {
@@ -100,8 +100,8 @@
     }
 
     .hero__descr {
-        width: 80%;
         margin-bottom: 132px;
+        width: 80%;
     }
 
     /* about */
@@ -115,12 +115,11 @@
         width: 100%;
     }
 
-
     /* catalog */
 
     .catalog__descr {
-        width: 100%;
         margin-bottom: 39px;
+        width: 100%;
     }
 
     .catalog-info__text {
@@ -152,8 +151,8 @@
     }
 
     .events-card__time {
-        text-align: end;
         margin-bottom: 4px;
+        text-align: end;
     }
 
     .events-card__title {
@@ -167,8 +166,8 @@
     /* projects */
 
     .projects__descr {
-        width: 100%;
         margin-bottom: 21px;
+        width: 100%;
     }
 
     .partner__item:not(:last-child) {
@@ -289,7 +288,7 @@
     .events__item {
         width: 100%;
         max-width: 100%;
-       
+
     }
 
     .events__item:not(:nth-child(3)) {
@@ -319,8 +318,8 @@
     }
 
     .projects__descr {
-        width: 100%;
         margin-bottom: 28px;
+        width: 100%;
     }
 
     .partner__title {
@@ -356,8 +355,8 @@
     }
 
     .contacts__wrapper {
-        margin-bottom: 11px;
         margin-right: 0;
+        margin-bottom: 11px;
     }
 
     .contacts__btn {
@@ -365,7 +364,6 @@
     }
 
 }
-
 
 @media (max-width: 576px) {
 
@@ -433,28 +431,27 @@
     }
 
     .hero__title {
+        margin-bottom: 11px;
+        width: 100%;
         font-weight: 700;
         font-size: 32px;
         line-height: 87%;
-        width: 100%;
         text-align: center;
-        margin-bottom: 11px;
     }
 
     .hero__descr {
+        margin-bottom: 38px;
+        width: 85%;
         font-weight: 400;
         font-size: 12px;
         line-height: 16.34px;
-        width: 85%;
         text-align: center;
-        margin-bottom: 38px;
     }
 
     .hero__btn {
         padding: 13px 18px;
         font-weight: 700;
         font-size: 12px;
-
     }
 
     /* about */
@@ -571,15 +568,15 @@
     }
 
     .projects__descr {
-        width: 99%;
         margin-bottom: 20px;
+        width: 99%;
     }
 
     .partner__title {
+        margin-bottom: 11px;
         font-weight: 600;
         font-size: 18px;
         line-height: 178%;
-        margin-bottom: 11px;
     }
 
     .partner__list {
@@ -603,10 +600,10 @@
     }
 
     .contacts__title {
+        margin-bottom: 0;
         font-weight: 600;
         font-size: 18px;
         line-height: 24.51px;
-        margin-bottom: 0;
     }
 
     .contacts__wrapper {
@@ -623,16 +620,16 @@
     }
 
     .contacts__btn-desktop {
-       display: none;
+        display: none;
     }
 
     .contacts__btn-mobile {
         display: block;
         padding: 0px 5px;
-        font-weight: 700;
-        font-size: 12px;
         width: 71px;
         height: 11px;
+        font-weight: 700;
+        font-size: 12px;
     }
 
     .contacts__form {
@@ -679,7 +676,3 @@
     }
 
 }
-
-
-
-
